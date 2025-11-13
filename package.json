@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "deploy": "npm run test:run && npm run build && git add -A && git diff-index --quiet HEAD || (git commit -m 'Deploy: Update build' && git push)"
   },
   "dependencies": {
     "@babel/standalone": "^7.23.0",

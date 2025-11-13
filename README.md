@@ -59,6 +59,25 @@ npm run build
 npm run preview
 ```
 
+### デプロイ（自動化）
+
+```bash
+# ワンコマンドでテスト→ビルド→プッシュ→デプロイ
+npm run deploy
+
+# または、シェルスクリプトで実行
+./scripts/deploy.sh
+```
+
+このコマンドは以下を自動実行します：
+1. テストの実行
+2. ビルド
+3. 変更のコミット
+4. リモートへのプッシュ
+5. GitHub Actionsによる自動デプロイ
+
+**デプロイURL**: https://yamagen3.github.io/reactsandbox/
+
 ## 技術スタック
 
 - **React 18**: UIライブラリ
