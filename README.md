@@ -77,8 +77,19 @@ npm run preview
 
 ## 使用例
 
-デフォルトで、シンプルなカウンターアプリのコードが用意されています。
+デフォルトで、動的アンケートフォームのサンプルコードが用意されています。
 左側のエディタでコードを編集すると、右側にリアルタイムでプレビューが表示されます。
+
+### サンプルコード
+
+プロジェクトには以下のサンプルコードが含まれています：
+
+- **デフォルト**: 動的アンケートフォーム（useState版）
+- **Zustand版**: `examples/zustand-example.jsx`
+- **Jotai版**: `examples/jotai-example.jsx`
+- **Redux Toolkit版**: `examples/redux-example.jsx`
+
+状態管理ライブラリの比較については [STATE_MANAGEMENT_COMPARISON.md](./STATE_MANAGEMENT_COMPARISON.md) を参照してください。
 
 ### サポートされるReact Hooks
 
@@ -109,10 +120,15 @@ react-sandbox/
 │   │   └── setup.js             # テストセットアップ
 │   ├── App.jsx                   # ルートコンポーネント
 │   └── main.jsx                  # エントリーポイント
+├── examples/
+│   ├── zustand-example.jsx      # Zustand状態管理の例
+│   ├── jotai-example.jsx        # Jotai状態管理の例
+│   └── redux-example.jsx        # Redux Toolkit状態管理の例
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml           # GitHub Actionsワークフロー
 ├── SPEC.md                       # プロジェクト仕様書
+├── STATE_MANAGEMENT_COMPARISON.md  # 状態管理ライブラリ比較
 ├── vite.config.js               # Vite設定
 └── package.json
 ```
